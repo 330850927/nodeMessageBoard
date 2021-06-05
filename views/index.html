@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>留言板</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css">
 </head>
 
 <body>
@@ -14,16 +14,15 @@
         <div class="page-header">
             <h1>王阳阳的留言板</p>
         </div>
-        <a class="btn btn-success" href="post.html">留言</a>
+        <a class="btn btn-success" target="_blank" href="/post">留言</a>
     </div>
     <div class="comments container">
-        <ul class="list-group">
-            <li class="list-group-item">1111</li>
-            <li class="list-group-item">1111</li>
-            <li class="list-group-item">1111</li>
-            <li class="list-group-item">1111</li>
-            <li class="list-group-item">1111</li>
-            <li class="list-group-item">1111</li>
+        <ul class="list-group"> 
+            {{each comments}}
+            <li class="list-group-item">{{$value.name}}说：{{$value.message}}
+                <span>{{$value.dateTime}}</span>
+            </li>
+            {{/each}}
         </ul>
     </div>
 </body>

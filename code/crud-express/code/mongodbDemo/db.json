@@ -1,0 +1,18 @@
+{
+    "students": [
+        {
+            "id": 1,
+            "name": "张小山",
+            "gender": 1,
+            "age": 20,
+            "hobbies": "吃饭睡觉打豆豆1"
+        },
+        {
+            "id": 2,
+            "name": "李四",
+            "gender": 1,
+            "age": 19,
+            "hobbies": "吃饭睡觉打豆豆2"
+        }
+    ]
+}
